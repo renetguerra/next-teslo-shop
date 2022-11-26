@@ -18,7 +18,7 @@ export default function App({ Component, pageProps }: AppProps) {
             fetcher: (resource, init) => fetch(resource, init).then(res => res.json())
           }}
         >   
-          <AuthProvider>
+          <AuthProvider isLoggedIn={false}>
             <CartProvider>
               <UIProvider isMenuOpen={false}>
                 <ThemeProvider theme={ lightTheme } >
