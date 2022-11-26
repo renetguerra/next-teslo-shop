@@ -19,7 +19,7 @@ export default function App({ Component, pageProps }: AppProps) {
           }}
         >   
           <AuthProvider isLoggedIn={false}>
-            <CartProvider>
+            <CartProvider isCartLoaded={false} cart={[]} numberOfItems={0} subTotal={0} tax={0} total={0}>
               <UIProvider isMenuOpen={false}>
                 <ThemeProvider theme={ lightTheme } >
                   <CssBaseline />
