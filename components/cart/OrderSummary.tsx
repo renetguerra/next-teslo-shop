@@ -5,7 +5,7 @@ import { currency } from '../../utils'
 
 
 interface Props {
-    orderValues: {
+    orderValues?: {
         numberOfItems: number;
         subTotal: number; 
         tax: number;
